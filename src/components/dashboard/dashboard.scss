@@ -1,0 +1,171 @@
+.dashboard {
+  &__wrapper {
+  }
+
+  &-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      .dashboard-link__overlay {
+        background-color: rgba(0, 0, 0, .1);
+      }
+    }
+
+    &--disabled {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      h1 {
+        color: #FFF;
+        position: relative;
+        font-weight: 300;
+      }
+
+    }
+
+    h1 {
+      color: #FFF;
+      position: relative;
+      font-weight: 300;
+    }
+
+    &__overlay {
+      position: absolute;
+      transition: background-color 0.1s linear;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__grid {
+    &--right {
+      padding-right: 24px;
+    }
+  }
+
+  .news {
+    background-color: #F2F2F2;
+
+    &__title {
+      padding: 12px 12px 72px 24px;
+      background-color: #ab87c1;
+      border-radius: 2px;
+
+      h1 {
+        margin: 20px 0 0 0;
+        font-weight: 300;
+        color: #FFF;
+      }
+    }
+
+    &__list {
+      position: relative;
+      top: -40px;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    &-item {
+      margin-bottom: 20px;
+
+      &__link {
+        width: 100%;
+        height: 100%;
+        padding: 12px 20px;
+        cursor: pointer;
+        display: block;
+      }
+
+      &__title {
+        h2 {
+          margin-top: 8px;
+          color: #888;
+          font-weight: 300;
+        }
+      }
+
+      &__body {
+        color: #888;
+      }
+    }
+
+  }
+
+}
+
+.featured, .recommended {
+  &-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #888888;
+    transition: background-color 0.1s linear;
+    &:hover {
+      background-color: rgba(0, 0, 0, .1);
+    }
+
+    &__text {
+      overflow: hidden;
+
+      h2 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #888;
+        position: relative;
+        font-weight: 300;
+        line-height: 1.3em;
+      }
+    }
+
+    &__img {
+      height: 100%;
+      flex-basis: 60px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+    h1 {
+      color: #FFF;
+      font-weight: 100;
+      line-height: 1.2em;
+    }
+  }
+}
+
+.featured {
+  &__title {
+    background-color: #8fcbb5;
+  }
+}
+
+.recommended {
+  &__title {
+    background-color: #f89c2d;
+  }
+}

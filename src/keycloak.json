@@ -1,0 +1,7 @@
+{
+  "realm": "Authors",
+  "auth-server-url": "https://et-auth.exus.co.uk/auth",
+  "ssl-required": "external",
+  "resource": "experience-ui",
+  "public-client": true
+}
